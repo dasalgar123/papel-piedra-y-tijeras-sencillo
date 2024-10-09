@@ -1,0 +1,25 @@
+body {
+    background-color: lightyellow;
+}
+
+h1 {
+    color: green;
+    font-size: 2em;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+.oculto {
+    display: none;
+}

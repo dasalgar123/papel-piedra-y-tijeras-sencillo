@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel, Tijeras</title>
+    <link rel="stylesheet" href="games.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Pantalla de inicio -->
+        <div id="inicio" class="pantalla">
+            <h1>¡Bienvenido a Piedra, Papel o Tijeras!</h1>
+            <button id="btnRegistrar">Registrar</button>
+            <button id="btnEntrar">Entrar y Jugar</button>
+        </div>
+
+        <!-- Pantalla de registro -->
+        <div id="registro" class="pantalla oculto">
+            <h1>Registro de Jugador</h1>
+            <label for="nombreJugador">Ingresa tu nombre:</label>
+            <input type="text" id="nombreJugador">
+            <button id="btnGuardar">Guardar</button>
+            <button id="btnVolver">Volver</button>
+        </div>
+
+        <!-- Pantalla de juego -->
+        <div id="juego" class="pantalla oculto">
+            <h1 id="nombreDisplay"></h1>
+            <h2>Elige tu jugada:</h2>
+            <button class="opcion" data-jugada="piedra">Piedra</button>
+            <button class="opcion" data-jugada="papel">Papel</button>
+            <button class="opcion" data-jugada="tijeras">Tijeras</button>
+            <h3 id="resultado"></h3>
+            <button id="btnReiniciar">Reiniciar Juego</button>
+        </div>
+    </div>
+
+    <script src="games.js"></script>
+</body>
+</html>
